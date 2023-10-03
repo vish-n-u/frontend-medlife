@@ -27,7 +27,7 @@ Clocked-In
 <Avatar mx={3} name='Maliene Aioluwani' src='https://bit.ly/tioluwani-kolawole' />
 <Text mx={1} fontSize={"medium"}>Account</Text>
     </Box>
-<Box display={{base:"flex",lg:"flex",xl:"flex"}}>
+<Box display={{base:"flex",lg:"none",xl:"none"}} mr={10}>
     <HeaderMedium/>
 </Box>
   </Box>
@@ -83,7 +83,6 @@ function HeaderMedium() {
               <Button variant='outline' mr={3} onClick={onClose}>
                 Cancel
               </Button>
-              <Button colorScheme='blue'>Save</Button>
             </DrawerFooter>
           </DrawerContent>
         </Drawer>
@@ -91,27 +90,5 @@ function HeaderMedium() {
     )
   }
 
-function x(){
-    return <> <Box display="flex" w="60%" flexDirection={"column"} justifyContent="start" overflowX={'auto'} alignItems="center" color="#1b1b1c" h="100%" >
-    <Text fontSize='lg' mx={4}>Dashboard</Text>
-    <Text fontSize='lg' mx={4}>Patients</Text>
-    <Text fontSize='lg' mx={4}>Human Resources</Text>
-    <Text fontSize='lg' color={"#04095A"} borderBottom="2px" borderBottomColor="blue" h="100%" display={"flex"} alignItems={"center"}  mx={4}>Clinical</Text>
-    <Text fontSize='lg' mx={4}>Compliance</Text>
-    <Text fontSize='lg' mx={4}>Billing</Text>
-    <Text fontSize='lg' mx={4}>Reports</Text>
- </Box>
 
-<Box display="flex" flexDirection={"column"} alignItems={"center"}  h="100%" bg="white">
-    <Button color='#09063d' mx={3} borderColor="#04095A" borderWidth="2px" variant='outline'>
-        Clocked-In
-    </Button>
-<QuestionOutlineIcon mx={3} boxSize={8}/>
-<BellIcon mx={3} boxSize={8}/>
-<Avatar mx={3} name='Maliene Aioluwani' src='https://bit.ly/tioluwani-kolawole' />
-`   <Text mx={1} fontSize={"medium"}>Account</Text>
-
-</Box>
-</>
-}
 export default Header

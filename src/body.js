@@ -94,7 +94,7 @@ function Body(){
         <Text onClick={()=>setIsUpcomingTaskClicked(false)} cursor={"pointer"} fontSize={"large"} ml={"20px"} borderBottom={"2px"} fontWeight={"medium"} color={!isUpcomingTaskClicked?"blue":"#88888c"} borderBottomColor={!isUpcomingTaskClicked?"blue":"transparent"} >Completed Tasks</Text>
       </Box>
       </Box>
-      <Box display={{ base: 'flex',  xl: 'none' }} w="full" mt={3} alignItems={"flex-start"}>
+      <Box display={{ base: 'flex',  xl: 'none' }} w="full" mt={3} alignItems={"flex-start"} mr={10} justifyContent={"flex-end"}>
       <DrawerExample/>
       </Box>
 
